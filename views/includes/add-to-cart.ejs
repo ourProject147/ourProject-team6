@@ -1,0 +1,12 @@
+<form action="/cart" method="post">
+    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+    <select class="btn" name="Extras">
+        <option value="noExtra">noExtra</option> 
+        <option value="cheese">cheese</option>
+        <option value="sourCream">sourCream</option>
+        <option value="onions">onions</option>
+        <option value="mushrooms">mushrooms</option>
+      </select> 
+    <button class="btn" type="submit">Add to Cart</button>
+    <input type="hidden" name="productId" value="<%= product._id %>">
+</form>
